@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sigin',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SiginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private myrouter:Router) { }
 username=""
 password=""
 readValues=()=>{
@@ -15,6 +16,12 @@ readValues=()=>{
     "username":this.username,
     "password":this.password
 
+  }
+  if(this.username=="admin" && this.password=="12345"){
+    this.myrouter.navigate(["/dashbord"])
+  }
+  else{
+    alert("in valid")
   }
   console.log(data)
   alert("Sucess")
