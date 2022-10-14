@@ -5,16 +5,32 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SiginComponent } from './sigin/sigin.component';
 import { SigupComponent } from './sigup/sigup.component';
+import { DashbordComponent } from './dashbord/dashbord.component';
+import { RouterModule, Routes } from '@angular/router';
+const appRoutes:Routes=[
+  {
+    path:"",component:SiginComponent
+    
+  },
+  {
+    path:"sigup",component:SigupComponent
+  },
+  {
+    path:"dashbord",component:DashbordComponent
+  }
+]
 
 @NgModule({
   declarations: [
     AppComponent,
     SiginComponent,
-    SigupComponent
+    SigupComponent,
+    DashbordComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
