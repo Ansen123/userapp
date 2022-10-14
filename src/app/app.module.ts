@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SiginComponent } from './sigin/sigin.component';
 import { SigupComponent } from './sigup/sigup.component';
+import { DashbordComponent } from './dashbord/dashbord.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SiginComponent,
-    SigupComponent
+    SigupComponent,
+    DashbordComponent
   ],
   imports: [
     BrowserModule,
