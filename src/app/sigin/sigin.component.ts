@@ -16,6 +16,8 @@ readValues=()=>{
     "password":this.password
 
   }
+  console.log(data)
+  alert("Sucess")
 }
   ngOnInit(): void {
   }
