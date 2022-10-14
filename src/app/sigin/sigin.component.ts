@@ -8,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class SiginComponent implements OnInit {
 
   constructor() { }
+username=""
+password=""
+readValues=()=>{
+  let data={
+    "username":this.username,
+    "password":this.password
 
+  }
+}
   ngOnInit(): void {
   }
 
