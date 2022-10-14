@@ -13,10 +13,10 @@ const appRoutes:Routes=[
     
   },
   {
-    path:"/sigup.component.html",component:SigupComponent
+    path:"sigup",component:SigupComponent
   },
   {
-    path:"/dashbord.component.html",component:DashbordComponent
+    path:"dashbord",component:DashbordComponent
   }
 ]
 
